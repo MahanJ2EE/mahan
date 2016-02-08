@@ -4,6 +4,28 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	template="/WEB-INF/templates/template.xhtml">
+	<ui:define name="person">
+		<h1><h:outputText value="Hello Mahan Java Developers" /></h1>
+		<br />
+		<h2>Persons</h2>
+		<table>
+			<ui:repeat value="#{personHome.persons}" var="v_person">
+				<tr>
+					<td>#{v_person.id}</td>
+					<td>#{v_person.name}</td>
+				</tr>
+			</ui:repeat>
+		</table>
+
+		<h:form>
+			<div
+					style="border-top: 1px solid #d0d0d0; margin-top: 12px; padding-top: 12px">
+				<h:inputText value="#{personHome.person.name}" id="personName"/><h:commandButton
+					action="#{personHome.savePerson}" value="Add" />
+				<h:message for="personName" style="color : red;padding-left : 8px"/></div>
+
+		</h:form>
+	</ui:define>
 	<ui:define name="content">
 		<h1><h:outputText value="Hello From JSF" /></h1>
 		Message : #{homeBean.message}<br />

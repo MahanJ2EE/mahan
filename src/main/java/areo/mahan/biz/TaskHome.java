@@ -1,8 +1,8 @@
-package areo.mahan.bean;
+package areo.mahan.biz;
 
 import java.util.List;
 
-import areo.mahan.model.Task;
+import areo.mahan.data.Task;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class TaskHome {
 
 	
 	public String getMessage() {
-		logger.debug("Returning message from task home bean");
+		logger.debug("Returning message from task home biz");
 		return "Hello from Spring";
 	}	
 

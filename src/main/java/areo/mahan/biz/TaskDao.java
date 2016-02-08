@@ -1,11 +1,11 @@
-package areo.mahan.bean;
+package areo.mahan.biz;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import areo.mahan.model.Task;
+import areo.mahan.data.Task;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

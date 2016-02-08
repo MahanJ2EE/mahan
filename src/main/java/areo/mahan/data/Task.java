@@ -1,4 +1,4 @@
-package areo.mahan.model;
+package areo.mahan.data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
